@@ -20,6 +20,9 @@ group :development, :test do
   gem 'guard-rspec'
   gem 'launchy'
   gem 'growl'
+  gem 'fabrication'
+  gem 'simplecov', :require => false
+
 end 
 
 

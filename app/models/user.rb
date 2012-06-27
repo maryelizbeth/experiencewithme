@@ -2,6 +2,8 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable, :omniauthable
   attr_accessible :name, :email, :password, :password_confirmation, :encrypted_password
 
+  has_many :user_adventures
+  has_many :adventures, :through => :user_adventures
   has_many :authentications
 
   def self.find_for_google(data, signed_in_resource=nil)

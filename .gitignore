@@ -14,3 +14,4 @@
 /log/*.log
 /tmp
 /config/initializers/oauth_keys.rb
+/coverage

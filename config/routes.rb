@@ -1,4 +1,10 @@
 Experiencewithme::Application.routes.draw do
+  get "user_adventures/create"
+
+  get "user_adventures/new"
+
+  get "user_adventures/index"
+
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
   
   devise_scope :user do
@@ -6,6 +12,7 @@ Experiencewithme::Application.routes.draw do
   end
 
   resources :adventures
+  resources :user_adventures
 
   root :to => 'home#index'
 end

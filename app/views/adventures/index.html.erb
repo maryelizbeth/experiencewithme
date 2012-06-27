@@ -1,5 +1,5 @@
 <h1>Choose Your Adventure</h1>
 
-<%= @adventures.each do |adventure| %>
-  <%= render :partial => 'adventure' %>
+<% @adventures.each do |adventure| %>
+  <%= render :partial => 'adventure', :locals => {adventure: adventure, user: current_user} %>
 <% end %> 

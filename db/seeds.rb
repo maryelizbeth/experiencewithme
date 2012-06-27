@@ -6,4 +6,5 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Adventure.create( name: 'Yoga Boat Cruise', city: 'Annapolis, MD', link: "http://www.livingsocial.com/adventures/332358-yoga-boat-cruise")
+a = Adventure.create( name: 'Yoga Boat Cruise', city: 'Annapolis, MD', link: "http://www.livingsocial.com/adventures/332358-yoga-boat-cruise")
+AdventureDate.create(adventure_id: a.id, date: Date.today.to_s)

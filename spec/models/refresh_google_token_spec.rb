@@ -8,9 +8,6 @@ describe RefreshGoogleToken do
 
     subject { RefreshGoogleToken.new(google_account) }
 
-    describe "#update_user" do 
-      it "does something"
-    end
 
     it "provides a refresh token with unwanted characters" do 
       google_account.stub(:refresh_token => "refresh%2Ftoken")

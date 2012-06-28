@@ -2,12 +2,14 @@ require 'spec_helper'
 
 describe User do
   context "visiting the home page" do 
+    let(:user) { Fabricate.build(:user) }
     it "can click a get started link" do 
       visit root_path 
       page.should have_link("get started")   
     end 
     it "can logout if authenticated" do
       visit root_path
+      sign_up(user)
       page.should have_link("sign out")
     end
   end 

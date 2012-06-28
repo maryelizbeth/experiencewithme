@@ -32,8 +32,4 @@ class RefreshGoogleToken
     google_account.token = get_token["access_token"]
     google_account.save
   end
-
-  def self.update_user(user)
-    # RefreshGoogleToken.new(user.google).save_token
-  end
 end

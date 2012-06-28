@@ -26,10 +26,10 @@ class RefreshGoogleToken
     "client_secret=#{GOOGLE_SECRET}&grant_type=refresh_token&refresh_token=#{refresh_token}&client_id=#{GOOGLE_KEY}"
   end 
 
-  # def save_token
-  #   google_account.token = get_new_token["access_token"]
-  #   google_account.save
-  # end
+  def save_token
+    google_account.token = get_token["access_token"]
+    google_account.save
+  end
 
   def client
     Faraday.new(:url => "https://accounts.google.com") do |faraday|

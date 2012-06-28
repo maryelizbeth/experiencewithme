@@ -6,6 +6,6 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     @user = User.find_for_google(request.env["omniauth.auth"], current_user)
     sign_in(@user)
     flash[:notice] = "You have signed in!"
-    redirect_to root_url
+    redirect_to adventures_url
   end
 end

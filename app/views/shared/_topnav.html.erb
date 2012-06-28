@@ -1,6 +1,9 @@
 <div class="inner-nav"> 
   <div class="add-contacts">
     <%=link_to "+", "#", :class=> "btn-add"%> 
+    <% if current_user %> 
+      <%=current_user.name %>
+    <% end  %>
     <%=link_to "sign out", destroy_user_session_path, :method => :delete %> 
   </div> 
 </div>

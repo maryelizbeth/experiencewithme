@@ -11,3 +11,27 @@
  *= require_self
  *= require_tree .
  */
+body{ 
+  background: url('background.png');
+  color: #0C0831;
+  font-family: "mplus-1m";
+  margin-top: 20px;
+}
+
+h1{ 
+  font-size: 72px;
+  font-weight: 300;
+}
+
+h2{ 
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.notice { 
+  min-height: 50px;
+  
+}
+#calendar_container{ 
+  background: #FFFFF9;
+}

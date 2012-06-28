@@ -19,4 +19,8 @@ class User < ActiveRecord::Base
     email: data["email"]
   }
   end
+
+  def google_authentication
+    authentications.where(:provider => 'google').first
+  end
 end

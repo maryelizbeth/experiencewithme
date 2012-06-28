@@ -3,6 +3,8 @@ class RefreshGoogleToken
 
   delegate :post, :to => :client
 
+  include GoogleClient
+
   def initialize(google_account)
     @google_account = google_account
   end
@@ -31,11 +33,7 @@ class RefreshGoogleToken
     google_account.save
   end
 
-  def client
-    Faraday.new(:url => "https://accounts.google.com") do |faraday|
-      faraday.request  :url_encoded
-      faraday.response :logger
-      faraday.adapter  Faraday.default_adapter
-    end
+  def self.update_user(user)
+    # RefreshGoogleToken.new(user.google).save_token
   end
 end

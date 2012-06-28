@@ -1,0 +1,6 @@
+<h1>Check your friends' calendars.</h1>
+<%= render :partial => 'add_friend', locals: {friend: @friend, user: current_user} %>
+
+<% @friends.each do |friend| %> 
+  <%= friend.email %>
+<%end %> 

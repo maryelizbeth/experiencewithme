@@ -1,0 +1,6 @@
+<%= form_for friend do |f| %> 
+  <%= f.label "Email" %> 
+  <%= f.email_field :email %>  
+  <%= f.hidden_field :user_id, :value => user.id %>
+  <%= f.submit "Add", :class=> 'btn btn-add' %>
+<% end %> 

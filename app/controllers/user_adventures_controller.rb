@@ -1,8 +1,9 @@
 
 class UserAdventuresController < ApplicationController
   def create
-    UserAdventure.create(adventure_id: params[:adventure_id],
-                         user_id: params[:user_id])
+    user = User.find_by_id(params[:user_id])
+    user.adventures << Adventure.find_by_id(params[:adventure_id])
+    user.save
     redirect_to friends_path
   end
 

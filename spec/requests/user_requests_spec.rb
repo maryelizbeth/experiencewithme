@@ -47,7 +47,25 @@ describe User do
 
     it "can click on the select link to select an adventure" do 
       visit adventures_path
-      expect { click_link("select") }.to change { user.adventures.count }.by(1)
+      expect { click_link("select") }.to change { UserAdventure.count }.by(1)
     end 
   end
+
+  context "visiting the friends page" do 
+    let(:user) { Fabricate.build(:user) }
+    before(:each) do 
+      sign_up(user)
+      visit friends_path
+    end 
+
+    it "can enter a friend's email address" do 
+      page.should have_field("friend_email")
+    end
+    it "can add a friend and view their email address on the page" do
+      fill_in "friend_email", :with => "fake@fake.com"
+      click_button("Add")
+      page.should have_content("fake@fake.com")
+    end
+  end 
+
 end 

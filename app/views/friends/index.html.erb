@@ -1,6 +1,16 @@
-<h1>Check your friends' calendars.</h1>
-<%= render :partial => 'add_friend', locals: {friend: @friend, user: current_user} %>
+<div class="row">
+  <div class="calendars_form">
+    <u><h2>Check calendars.</h2></u>
+    <br />
+    <%= render :partial => 'add_friend', locals: {friend: @friend, user: current_user} %>
+  </div>
 
-<% @friends.each do |friend| %> 
-  <%= friend.email %>
-<%end %> 
+  <div class="added_friends">
+    <u><h2>Added Friends</h2></u>
+    <% @friends.each do |friend| %> 
+      <%= friend.email %><br/>
+    <%end %>
+  </div>
+</div>
+
+<%= link_to "Invite your friends!", new_invitation_path  %>

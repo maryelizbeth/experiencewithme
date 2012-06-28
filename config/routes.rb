@@ -16,6 +16,7 @@ Experiencewithme::Application.routes.draw do
   resources :adventures
   resources :user_adventures
   resources :friends
+  resources :invitations
 
   root :to => 'home#index'
 end

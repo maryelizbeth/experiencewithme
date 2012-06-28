@@ -21,11 +21,13 @@ body{
 h1{ 
   font-size: 72px;
   font-weight: 300;
+  margin-bottom: 25px;
 }
 
 h2{ 
   font-size: 36px;
   font-weight: 300;
+  line-height:1.75em;
 }
 
 .notice { 
@@ -34,4 +36,32 @@ h2{
 }
 #calendar_container{ 
   background: #FFFFF9;
+  padding: 15px;
+}
+
+.inner-nav{
+  padding:15px !important;
+}
+
+.added_friends{
+  float:right;
+  padding-right:55px;
+}
+
+.calendars_form{
+  float:left;
+  padding-left:55px;
+}
+
+.btn-add{
+  margin-right:25px;
+}
+
+#user_name{
+  margin-top:20px;
+}
+
+.sign_out{
+  float:left;
+  margin-left:25px;
 }

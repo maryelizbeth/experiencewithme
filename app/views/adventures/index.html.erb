@@ -1,4 +1,4 @@
-<h1>Choose Your Adventure</h1>
+<h1 class="title-font">Choose Your Adventure</h1>
 
 <% @adventures.each do |adventure| %>
   <%= render :partial => 'adventure', :locals => {adventure: adventure, user: current_user} %>

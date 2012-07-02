@@ -12,6 +12,7 @@ class FriendsController < ApplicationController
     else
       @friend = Friend.new
       @friends = current_user.friends
+      flash[:notice] = "It looks like you've already added that friend."
       render :index
     end 
   end 

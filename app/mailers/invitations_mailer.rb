@@ -1,6 +1,6 @@
 class InvitationsMailer < ActionMailer::Base
 
-  default from: "experienceinvitations@experiencewit.me"
+  default from: "experienceinvitations@experiencewith.me"
 
   def invitation_email(current_user, friend, adventure)
     mail(:to => "#{current_user.invitations.last.friend_email}", 

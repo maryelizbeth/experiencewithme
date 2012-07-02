@@ -3,3 +3,8 @@
 <%=link_to "get started", user_omniauth_authorize_path(:google) %> 
   <%= render "shared/info_text" %>
 <% end %> 
+<% if current_user %>
+<div id="calendar">
+
+</div> 
+<% end %> 

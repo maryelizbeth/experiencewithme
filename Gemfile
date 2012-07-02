@@ -10,6 +10,7 @@ gem 'omniauth'
 gem 'omniauth-google-oauth2'
 gem 'devise'
 gem 'pg'
+gem 'heroku'
 
 
 group :development, :test do 

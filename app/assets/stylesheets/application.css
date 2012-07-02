@@ -14,7 +14,8 @@
 body{ 
   background: url('background.png');
   color: #0C0831;
-  font-family: "mplus-1m";
+  font-family: "pragmatica-web-condensed", Helvetica, sans-serif;
+  font-size: 24px;
   margin-top: 20px;
 }
 

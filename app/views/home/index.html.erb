@@ -1,1 +1,5 @@
+<% unless current_user %> 
+<h1>experiencewith.me</h1>
 <%=link_to "get started", user_omniauth_authorize_path(:google) %> 
+  <%= render "shared/info_text" %>
+<% end %> 

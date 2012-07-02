@@ -2,15 +2,12 @@
   <% if current_user %> 
     <span id="user_name">
       <%=current_user.name %>
-    </span> 
-  <div class="add-contacts">
-    <%=link_to "+", "#", :class=> "btn-add"%> 
-  </div> 
-  <br />
+    </span>  
   <div class="sign_out">
     <%=link_to "sign out", destroy_user_session_path, :method => :delete %> 
-    <% end %>
   </div>
+  <% end %>
 </div>
+
 <div class="nav-separator"> 
 </div>

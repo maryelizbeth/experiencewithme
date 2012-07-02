@@ -11,8 +11,8 @@ class InvitationsController < ApplicationController
     if @invitation.save 
       if logged_in?
         InvitationsMailer.invitation_email(@user, @friend, @adventure).deliver
-          flash[:notice] = "Your friends have been invited to join you on this adventure.",
-          redirect_to root_url
+        flash[:notice] = "Your friends have been invited to join you on this adventure."
+        redirect_to root_url
       else 
         flash[:notice] = "Something went wrong during the invitation situation."
         redirect_to root_url

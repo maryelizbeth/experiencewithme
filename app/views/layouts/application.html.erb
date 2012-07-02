@@ -9,7 +9,9 @@
   <script type='text/javascript' src='fullcalendar.js'></script>
   <script type="text/javascript">
     $(function(){
-      $('#calendar').fullCalendar({});
+      $('#calendar').fullCalendar({
+        editable: false, 
+      });
     });
   </script>
   <%= csrf_meta_tags %>

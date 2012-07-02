@@ -1,5 +1,5 @@
-<h1 class="title-font"> Invite a Friend </h1> 
-<% form_for @invitation do |f| %>
+<h1 class="title-font"> Invite Friends to Join You</h1> 
+<%= form_for @invitation do |f| %>
   <%= f.label :friend_email, "Email" %>
   <%= f.text_field :friend_email %>
   <%= f.hidden_field :token %>

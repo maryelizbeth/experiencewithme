@@ -22,6 +22,7 @@ body{
 h1{ 
   font-size: 72px;
   font-weight: 300;
+  font-family: "mono45-headline", Helvetica, sans-serif;
   margin-bottom: 25px;
 }
 

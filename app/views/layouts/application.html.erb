@@ -10,9 +10,36 @@
   <script type="text/javascript">
     $(function(){
       $('#calendar').fullCalendar({
-        editable: false,
-        color: '#0C0831', 
-        textColor: '#F1D8C8',
+         events: [
+        {
+            title: 'The Circus Experience: Flying Trapeze + Acrobatics + Juggling',
+            start: '2012-07-08'
+        },
+
+        {
+            title: 'Yoga Boat Cruise',
+            start: '2012-07-21'
+        },
+        {
+
+          title: 'Grand Canyon, Sedona, and Flagstaff Tour for 2',
+          start: '2012-09-05',
+          end: '2012-09-09'
+        }, 
+        { 
+          title: 'BBQ Tasting + Sauce Making + Moonshine Tasting',
+          start: '2012-07-18'
+        }, 
+        { 
+          title: 'Sushi Making + Sake Tasting',
+          start: '2012-07-28'
+        }, 
+        {
+          title: 'City Kayaking on the Mississippi River + Wine',
+          start: '2012-06-13'
+        }
+        ],
+        editable: false
       });
     });
   </script>

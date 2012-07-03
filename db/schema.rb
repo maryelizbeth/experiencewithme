@@ -58,8 +58,9 @@ ActiveRecord::Schema.define(:version => 20120628195618) do
   create_table "user_adventures", :force => true do |t|
     t.integer  "user_id"
     t.integer  "adventure_id"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.string   "adventure_date"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
   end
 
   create_table "users", :force => true do |t|

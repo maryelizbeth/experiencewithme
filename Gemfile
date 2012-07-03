@@ -11,6 +11,7 @@ gem 'omniauth-google-oauth2'
 gem 'devise'
 gem 'mysql2'
 gem 'heroku'
+gem 'thin'
 
 
 group :development, :test do 

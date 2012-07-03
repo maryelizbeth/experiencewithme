@@ -67,3 +67,20 @@ h2{
   float:left;
   margin-left:25px;
 }
+
+.group:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+
+.fc-event-skin{ 
+  border-color: #0C0831;
+  background-color: #0C0831;
+  color: #F1D8C8;
+}
+
+* html .group             { zoom: 1; } /* IE6 */
+*:first-child+html .group { zoom: 1; } /* IE7 */

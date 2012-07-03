@@ -7,4 +7,8 @@ class Adventure < ActiveRecord::Base
   def dates
     self.adventure_dates.collect(&:date)
   end 
+
+  def json_adventures
+    self.to_json
+  end 
 end

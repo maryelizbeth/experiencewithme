@@ -128,7 +128,7 @@ html .fc,
 	}
 	
 .fc-state-highlight { /* <td> today cell */ /* TODO: add .fc-today to <th> */
-	background: #ffc;
+	background: #EDFFE2;
 	}
 	
 .fc-cell-overlay { /* semi-transparent rectangle while dragging */
@@ -279,10 +279,11 @@ a.fc-event {
 	}
 	
 .fc-event-skin {
-	border-color: #36c;     /* default BORDER color */
-	background-color: #36c; /* default BACKGROUND color */
-	color: #fff;            /* default TEXT color */
-	}
+  border-color: #0C0831;
+  background-color: #0C0831;
+  color: #EDFFE2;
+}
+
 	
 .fc-event-inner {
 	position: relative;

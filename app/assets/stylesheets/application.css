@@ -40,7 +40,8 @@ h2{
 
 .notice { 
   min-height: 50px;
-  color: #0C0831;  
+  color: #0C0831; 
+  padding-left: 350px; 
 }
 
 #calendar_container{ 

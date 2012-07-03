@@ -2,7 +2,7 @@
   <% if current_user %> 
     <span id="user_name">
       <%=current_user.name %>
-    </span>  
+    </span>
   <div class="sign_out">
     <%=link_to "sign out", destroy_user_session_path, :method => :delete, :class => 'btn-sign-out' %> 
   </div>

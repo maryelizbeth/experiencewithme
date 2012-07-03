@@ -12,9 +12,6 @@ test:
   database: experiencewithme_test
   user: marycutrali
 
-# production:
- 
-#   adapter: mysql2
-#   database: experiencewithme_production
-#   user: fill_me_in
-#   password: me_too
+production:
+  adapter: mysql2
+  database: experiencewithme_production

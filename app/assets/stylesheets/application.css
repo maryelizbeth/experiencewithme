@@ -61,12 +61,36 @@ h2{
 }
 
 #user_name{
-  margin-top:20px;
+  font-family: "mono45-headline", Helvetica, Arial, Sans-Serif;
 }
 
 .sign_out{
   float:left;
   margin-left:25px;
+  margin-top: 12px;
+}
+
+.btn-sign-out{ 
+   border-top: 1px solid #edffe2;
+   background: #accc99;
+   background: -webkit-gradient(linear, left top, left bottom, from(#edffe2), to(#accc99));
+   background: -webkit-linear-gradient(top, #edffe2, #accc99);
+   background: -moz-linear-gradient(top, #edffe2, #accc99);
+   background: -ms-linear-gradient(top, #edffe2, #accc99);
+   background: -o-linear-gradient(top, #edffe2, #accc99);
+   padding: 10px 20px;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 5px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #0c0831;
+   font-size: 20px;
+   font-family: "mono45-headline", Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
 }
 
 .group:after {

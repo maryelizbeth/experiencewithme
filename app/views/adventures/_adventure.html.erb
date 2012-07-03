@@ -1,9 +1,10 @@
 <div id="adventure"> 
-  <%= adventure.name %> 
-  <%= adventure.city %>
+  <%= adventure.name %><br />
+  <%= adventure.city %><br />
   <% adventure.dates.each do |date| %> 
     <span class="date"><%= date %></span>
-  <% end %> 
-  <%= link_to "view on livingsocial.com", adventure.link %> 
+  <% end %>
+  <%= link_to "view on livingsocial.com", adventure.link %>
   <%= link_to "select", user_adventures_path(user_id: user.id, adventure_id: adventure.id), :method => :post, :class => 'btn-select'%>
+  <br />
 </div> 

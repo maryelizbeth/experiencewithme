@@ -2,4 +2,5 @@
 
 <% @adventures.each do |adventure| %>
   <%= render :partial => 'adventure', :locals => {adventure: adventure, user: current_user} %>
+  <br /> 
 <% end %> 

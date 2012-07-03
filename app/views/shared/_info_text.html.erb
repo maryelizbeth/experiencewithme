@@ -1,7 +1,22 @@
-<div class="brand-description sixcol">
-  <p>no one wants to have a unique experience alone.<br/>
-  experiencewith.me allows a you (the host) to schedule livingsocial adventures with friends through a single application.</p>
-</div> 
-<div class="user-flow">
-  <p>Sign up with your gmail, pick an adventure, add friends, send invitations, and start managing your plans for adventure.</p>
-</div> 
+<div class="row">
+  <div class="brand-description ninecol">
+    <p>no one wants to have a unique experience alone.
+    experiencewith.me allows a you (the host) to schedule livingsocial adventures with friends through a single application.</p>
+  </div> 
+</div>
+<div class="row">
+  <div id="get_started">
+  <div class="user-flow fivecol">
+    <h2 class="title-font">How It Works:</h2>
+    1. sign up with your gmail.<br />
+    2. pick an adventure.<br />
+    3. add friends.<br />
+    4. send invitations.<br />
+    5. manage your adventurous plans.</p>
+  </div> 
+</div>
+  <div class='start'>
+    <%=link_to "get started", user_omniauth_authorize_path(:google), :class=>'btn-get-started' %>
+  </div>
+</div>
+

@@ -1,6 +1,8 @@
 <% unless current_user %> 
-<h1>experiencewith.me</h1>
-<%=link_to "get started", user_omniauth_authorize_path(:google) %> 
+<div class="compass"> 
+  <%=image_tag "icon-compass.png" %>
+</div>
+<h1 class="brand">experiencewith.me</h1> 
   <%= render "shared/info_text" %>
 <% end %> 
 <% if current_user %>

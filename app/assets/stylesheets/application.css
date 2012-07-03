@@ -39,6 +39,7 @@ h2{
 #calendar_container{ 
   background: #FFFFF9;
   padding: 15px;
+  min-height: 640px;
 }
 
 .inner-nav{
@@ -76,10 +77,66 @@ h2{
   height: 0;
 }
 
-.fc-event-skin{ 
-  border-color: #0C0831;
-  background-color: #0C0831;
-  color: #F1D8C8;
+.compass img{ 
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 90px;
+  margin-bottom: 10px;
+  float: left;
+  height: 100px;
+  width: 100px;
+}
+
+h1.brand{ 
+  float:left;
+  margin-left: 5px;
+  margin-top: 10px;
+  padding-bottom: 5px;
+  font-size: 96px;
+}
+
+.brand-description{ 
+  padding-left: 125px;
+}
+
+h2.title-font{ 
+  margin-bottom: -12px;
+}
+.user-flow{ 
+  padding-top: 10px;
+  padding-left: 110px;
+  float: left;
+}
+
+#get_started{ 
+  margin-top: 25px;
+}
+
+.start{ 
+  float: left;
+  padding-top: 75px;
+}
+.btn-get-started{ 
+   border-top: 1px solid #edffe2;
+   background: #accc99;
+   background: -webkit-gradient(linear, left top, left bottom, from(#edffe2), to(#accc99));
+   background: -webkit-linear-gradient(top, #edffe2, #accc99);
+   background: -moz-linear-gradient(top, #edffe2, #accc99);
+   background: -ms-linear-gradient(top, #edffe2, #accc99);
+   background: -o-linear-gradient(top, #edffe2, #accc99);
+   padding: 20px 40px;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 5px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #0c0831;
+   font-size: 64px;
+   font-family: "mono45-headline", Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
 }
 
 * html .group             { zoom: 1; } /* IE6 */

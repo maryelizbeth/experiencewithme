@@ -9,13 +9,12 @@ gem 'rails', '3.2.5'
 gem 'omniauth'
 gem 'omniauth-google-oauth2'
 gem 'devise'
-gem 'pg'
+gem 'mysql2'
 gem 'heroku'
 
 
 group :development, :test do 
   gem 'rspec'
-  gem 'mysql2'
   gem 'rspec-rails'
   gem 'capybara'
   gem 'guard'

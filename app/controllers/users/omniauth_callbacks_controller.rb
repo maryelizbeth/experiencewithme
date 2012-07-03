@@ -6,7 +6,6 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     @user = User.find_for_google(request.env["omniauth.auth"], current_user)
     sign_in(@user)
     flash[:notice] = "You have signed in!"
-    # fetch_google_calendar(@user)
     redirect_to adventures_url
   end
 

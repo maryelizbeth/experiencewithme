@@ -34,8 +34,9 @@ h2{
 
 .notice { 
   min-height: 50px;
-  
+  color: #0C0831;  
 }
+
 #calendar_container{ 
   background: #FFFFF9;
   padding: 15px;
@@ -58,10 +59,6 @@ h2{
 
 .btn-add{
   margin-right:25px;
-}
-
-#user_name{
-  font-family: "mono45-headline", Helvetica, Arial, Sans-Serif;
 }
 
 .sign_out{
@@ -163,5 +160,33 @@ h2.title-font{
    vertical-align: middle;
 }
 
+.btn-invite{ 
+  border-top: 1px solid #edffe2;
+   background: #accc99;
+   background: -webkit-gradient(linear, left top, left bottom, from(#edffe2), to(#accc99));
+   background: -webkit-linear-gradient(top, #edffe2, #accc99);
+   background: -moz-linear-gradient(top, #edffe2, #accc99);
+   background: -ms-linear-gradient(top, #edffe2, #accc99);
+   background: -o-linear-gradient(top, #edffe2, #accc99);
+   padding: 20px 40px;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 5px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #0c0831;
+   font-size: 24px;
+   font-family: "mono45-headline", Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+}
+
+#friend_invite_button{ 
+  float: right;
+  margin-top: 50px;
+  margin-right: 50px;
+}
 * html .group             { zoom: 1; } /* IE6 */
 *:first-child+html .group { zoom: 1; } /* IE7 */

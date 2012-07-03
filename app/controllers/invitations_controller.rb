@@ -8,6 +8,7 @@ class InvitationsController < ApplicationController
   def create 
     @invitation = Invitation.new(params[:invitation])
     @invitation.user = current_user
+    @invitation.adventure = current_user.adventures.last
     if @invitation.save 
       if current_user
         InvitationsMailer.invitation_email(current_user, @invitation.friend, @invitation.adventure).deliver

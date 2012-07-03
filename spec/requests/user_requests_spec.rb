@@ -34,8 +34,7 @@ describe User do
     end 
     it "can view dates for an adventure" do  
       visit adventures_path
-      adventure.dates.first.should_not be_empty
-      page.should have_content(adventure.dates.first)
+      page.should have_content(adventure.adventure_date)
     end
     it "can view location information for an adventure" do  
       visit adventures_path

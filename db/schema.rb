@@ -24,8 +24,9 @@ ActiveRecord::Schema.define(:version => 20120628195618) do
     t.string   "name"
     t.string   "link"
     t.string   "city"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.string   "adventure_date"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
   end
 
   create_table "authentications", :force => true do |t|

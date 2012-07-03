@@ -4,6 +4,7 @@ class CreateAdventures < ActiveRecord::Migration
       t.string :name
       t.string :link
       t.string :city
+      t.string :adventure_date
 
       t.timestamps
     end

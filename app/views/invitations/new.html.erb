@@ -1,8 +1,11 @@
 <h1 class="title-font"> Invite Friends to Join You</h1> 
   <div id="friends" class="group">
-    <% current_user.friends.each do |friend| %>
-      <span class = "threecol"> <%= friend.email %> <br /></span>
-    <% end %>
+  <%= form_for @invitation do |f| %>
+    <%= f.label :friend_email, "Email" %>
+    <%= f.text_field :friend_email %>
+    <%= f.hidden_field :token %>
+    <%= f.submit "Invite!", :class => 'btn-invite' %>
+  <% end %>
   </div>
 
   

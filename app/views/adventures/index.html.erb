@@ -4,3 +4,6 @@
   <%= render :partial => 'adventure', :locals => {adventure: adventure, user: current_user} %>
   <br /> 
 <% end %> 
+<div class="calendar_link"> 
+  <%=link_to "no thanks, take me to my calendar.", root_path, :class => 'btn-calendar' %>
+</div>

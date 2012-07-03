@@ -1,7 +1,6 @@
 <div id="adventure"> 
-  <%= adventure.name %><br />
-  <%= adventure.city %><br />
-  <%= adventure.adventure_date %>
-  <%= link_to "view on livingsocial.com", adventure.link %>
-  <%= link_to "select", user_adventures_path(user_id: user.id, adventure_id: adventure.id), :method => :post, :class => 'btn-select'%>
+  <%= link_to "#{adventure.name}", adventure.link %> | 
+  <%= adventure.city %> | <%= adventure.adventure_date %> | 
+    <%= link_to "select", user_adventures_path(user_id: user.id, adventure_id: adventure.id), :method => :post, :class => 'btn-select'%>
 </div> 
+ 
